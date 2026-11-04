@@ -5,3 +5,6 @@ Myself Ravi teja
 Im an SDET working ibm
 Happy learning....
 
+
+JAVASCRIPT AND TYPESCRIPT
+
