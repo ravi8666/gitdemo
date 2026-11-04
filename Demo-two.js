@@ -7,6 +7,7 @@ class Car{
     milage;
     wheels;
     engine;
+    
 
     initializeClassVariables(company,model,color,price,milage,wheels,engine){
         this.company = company;
@@ -26,6 +27,9 @@ class Car{
         console.log(this.company+" car has stopped");
     }
 
+    accelerateCar(){
+        console.log(this.company+" car is accelerating");
+    }
     carDetails(){
         console.log("company of the car is " + this.company);
         console.log("model of the car is " + this.model);
@@ -44,3 +48,11 @@ kc.initializeClassVariables("Kia","Carrens","Black","2500000",23.45,4,"2.0L Turb
 kc.startCar();
 kc.stopCar();
 kc.carDetails();
+kc.accelerateCar();
+
+const mc = new Car();
+mc.initializeClassVariables("Maruti","Swift","White","800000",25.45,4,"1.2L");
+mc.startCar();
+mc.stopCar();
+mc.carDetails();
+mc.accelerateCar();
