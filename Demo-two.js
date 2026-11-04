@@ -6,14 +6,16 @@ class Car{
     price;
     milage;
     wheels;
+    engine;
 
-    initializeClassVariables(company,model,color,price,milage,wheels){
+    initializeClassVariables(company,model,color,price,milage,wheels,engine){
         this.company = company;
         this.model = model;
         this.color = color;
         this.price = price;
         this.milage = milage;
         this.wheels = wheels;
+        this.engine = engine;
     }
 
     startCar(){
@@ -21,7 +23,7 @@ class Car{
     }
 
     stopCar(){
-        console.log(this.company+" car has started");
+        console.log(this.company+" car has stopped");
     }
 
     carDetails(){
@@ -31,13 +33,14 @@ class Car{
         console.log("price of the car is " + this.price);
         console.log("milage of the car is " + this.milage);
         console.log("wheels of the car is " + this.wheels);
+        console.log("engine of the car is " + this.engine);
     }
 
 
 }
 
 const kc = new Car();
-kc.initializeClassVariables("Kia","Carrens","Black","2500000",23.45,4);
+kc.initializeClassVariables("Kia","Carrens","Black","2500000",23.45,4,"2.0L Turbo");
 kc.startCar();
 kc.stopCar();
 kc.carDetails();
